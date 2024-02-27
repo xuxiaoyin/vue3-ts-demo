@@ -8,9 +8,14 @@ const routes: RouteRecordRaw[] = [
     redirect: '/home'
   },
   {
+    path: '/waterFall',
+    name: 'WaterFall',
+    component: () => import('@/views/WaterFall/index.vue')
+  },
+  {
     path: '/home',
     name: 'home',
-    component: () => import('@/layout/index.vue'),
+    component: () => import('@/Layout/index.vue'),
     children: [
       {
         path: '/home',
