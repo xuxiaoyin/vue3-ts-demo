@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { resolve } from 'path'
-import DefineOptions from 'unplugin-vue-define-options'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 
 
 // https://vitejs.dev/config/

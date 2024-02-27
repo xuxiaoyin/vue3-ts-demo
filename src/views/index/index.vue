@@ -3,6 +3,7 @@
     <el-button type="primary">测试</el-button>
     <ComponentDemo ref="comRef" :title="name" :arr="[1, 2, 3]" @on-click="childClick" />
     <TreeVue :data="data" />
+    <TransitionDom />
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import { ref, reactive, onMounted } from 'vue'
 import axios from '../../http/http'
 import ComponentDemo from '@/components/ComponentDemo.vue'
 import TreeVue from '@/components/Tree.vue'
+import TransitionDom from '@/components/TransitionDom.vue'
 
 // 类型定义
 interface ITableData {

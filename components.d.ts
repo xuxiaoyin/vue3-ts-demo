@@ -24,6 +24,7 @@ declare module 'vue' {
     Icons: typeof import('./src/components/icons.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TransitionDom: typeof import('./src/components/TransitionDom.vue')['default']
     Tree: typeof import('./src/components/Tree.vue')['default']
   }
 }
