@@ -1,24 +1,27 @@
 <template>
-  <div class="common-layout">
-    <el-container>
-      <!-- 左侧导航 -->
-      <NavMenu />
-      <el-container>
-        <!-- 头部 -->
-        <el-header>Header</el-header>
-        <!-- 主题 -->
-        <el-main>
-          main
-        </el-main>
-      </el-container>
-    </el-container>
+  <div class="xm-box">
+    <div><Menu /></div>
+    <div class="xm-box__right">
+      <Header />
+      <Content />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import NavMenu from './navMenu.vue'
+import Menu from './Menu/index.vue'
+import Content from './Content/index.vue'
+import Header from './Header/index.vue'
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@include b(box) {
+  @include bfc;
+  display: flex;
+  @include e(right) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
 </style>
