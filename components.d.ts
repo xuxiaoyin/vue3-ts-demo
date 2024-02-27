@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Card: typeof import('./src/components/Card.vue')['default']
     ComponentDem: typeof import('./src/components/ComponentDem.vue')['default']
     ComponentDemo: typeof import('./src/components/ComponentDemo.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
@@ -23,5 +24,6 @@ declare module 'vue' {
     Icons: typeof import('./src/components/icons.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Tree: typeof import('./src/components/Tree.vue')['default']
   }
 }
