@@ -1,9 +1,12 @@
 <template>
   <div class="common-layout">
-    <el-container direction="vertical">
-      <el-header>Header</el-header>
+    <el-container>
+      <!-- 左侧导航 -->
+      <NavMenu />
       <el-container>
-        <NavMenu />
+        <!-- 头部 -->
+        <el-header>Header</el-header>
+        <!-- 主题 -->
         <el-main>
           main
         </el-main>
