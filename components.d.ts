@@ -26,5 +26,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TransitionDom: typeof import('./src/components/TransitionDom.vue')['default']
     Tree: typeof import('./src/components/Tree.vue')['default']
+    VModel: typeof import('./src/components/VModel.vue')['default']
+    VModelDemo: typeof import('./src/components/VModelDemo.vue')['default']
   }
 }

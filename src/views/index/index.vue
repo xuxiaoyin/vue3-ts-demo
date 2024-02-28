@@ -4,6 +4,15 @@
     <ComponentDemo ref="comRef" :title="name" :arr="[1, 2, 3]" @on-click="childClick" />
     <TreeVue :data="data" />
     <TransitionDom />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <el-button type="primary" @click="isShow = !isShow">开关</el-button>
+    <div>{{ text }}</div>
+    <VModelDemo v-model="isShow" v-model:textVal="text" />
   </div>
 </template>
 
@@ -13,6 +22,7 @@ import axios from '../../http/http'
 import ComponentDemo from '@/components/ComponentDemo.vue'
 import TreeVue from '@/components/Tree.vue'
 import TransitionDom from '@/components/TransitionDom.vue'
+import VModelDemo from '@/components/VModelDemo.vue'
 
 // 类型定义
 interface ITableData {
@@ -88,6 +98,10 @@ const data = reactive<ITree[]>([
     children: []
   }
 ])
+
+const isShow = ref<boolean>(true)
+
+const text = ref<string>('测试')
 
 </script>
 

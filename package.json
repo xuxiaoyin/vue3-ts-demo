@@ -12,6 +12,7 @@
     "animate.css": "^4.1.1",
     "axios": "^1.6.7",
     "element-plus": "^2.5.6",
+    "gsap": "^3.12.5",
     "sass": "^1.71.1",
     "unplugin-vue-define-options": "^1.4.2",
     "vue": "^3.4.19",
