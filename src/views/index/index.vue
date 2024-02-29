@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue'
+import { getCurrentInstance } from 'vue'
 import type {Directive, DirectiveBinding} from 'vue'
 import A from '@/components/A.vue'
 
@@ -55,6 +55,14 @@ const vHasShow:Directive<HTMLElement, string> = (el, bingding) => {
     el.style.display = 'none'
   }
 }
+
+const instance = getCurrentInstance()
+
+instance?.proxy?.$myLoading.show()
+
+setTimeout(() => {
+  instance?.proxy?.$myLoading.hide()
+}, 5000)
 
 </script>
 
